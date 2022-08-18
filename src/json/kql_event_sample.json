@@ -1,0 +1,3660 @@
+{
+  "result": {
+    "meta": [
+      {
+        "name": "payload",
+        "type": "String"
+      },
+      {
+        "name": "event_uuid",
+        "type": "String"
+      },
+      {
+        "name": "event_ids",
+        "type": "Array(String)"
+      },
+      {
+        "name": "event_type",
+        "type": "Enum8('EVENT' = 1, 'ALERT' = 2)"
+      },
+      {
+        "name": "truncated",
+        "type": "Int8"
+      },
+      {
+        "name": "name",
+        "type": "String"
+      },
+      {
+        "name": "description",
+        "type": "String"
+      },
+      {
+        "name": "data_source_id",
+        "type": "String"
+      },
+      {
+        "name": "qid_data_source_type_id",
+        "type": "Int32"
+      },
+      {
+        "name": "qid",
+        "type": "Int64"
+      },
+      {
+        "name": "qid_event_id",
+        "type": "String"
+      },
+      {
+        "name": "qid_event_category",
+        "type": "String"
+      },
+      {
+        "name": "protocol_config_id",
+        "type": "Int64"
+      },
+      {
+        "name": "low_level_categories",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "original_time",
+        "type": "Int64"
+      },
+      {
+        "name": "receive_time",
+        "type": "Int64"
+      },
+      {
+        "name": "parse_time",
+        "type": "Int64"
+      },
+      {
+        "name": "storage_time",
+        "type": "Int64"
+      },
+      {
+        "name": "external_mitre_ids",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mitre_ids",
+        "type": "Array(String)"
+      },
+      {
+        "name": "data_source_type_id",
+        "type": "Int64"
+      },
+      {
+        "name": "data_source_type_categories",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "external_detection_id",
+        "type": "String"
+      },
+      {
+        "name": "external_alert_id",
+        "type": "String"
+      },
+      {
+        "name": "internal_account_id",
+        "type": "String"
+      },
+      {
+        "name": "external_severity",
+        "type": "String"
+      },
+      {
+        "name": "severity",
+        "type": "Int32"
+      },
+      {
+        "name": "external_credibility",
+        "type": "String"
+      },
+      {
+        "name": "credibility",
+        "type": "Int32"
+      },
+      {
+        "name": "retention_bucket",
+        "type": "Int32"
+      },
+      {
+        "name": "finding_id",
+        "type": "String"
+      },
+      {
+        "name": "artifact___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___mime_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___payload_bin",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___url",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___hashes___MD5",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___hashes___SHA_1",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___hashes___SHA_256",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___hashes___SHA_512",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___encryption_algorithm",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___decryption_key",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "artifact___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "autonomous_system___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "autonomous_system___number",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "autonomous_system___name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "autonomous_system___rir",
+        "type": "Array(String)"
+      },
+      {
+        "name": "autonomous_system___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "autonomous_system___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "directory___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "directory___path",
+        "type": "Array(String)"
+      },
+      {
+        "name": "directory___path_enc",
+        "type": "Array(String)"
+      },
+      {
+        "name": "directory___ctime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "directory___mtime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "directory___atime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "directory___contains_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "directory___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "directory___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "domain_name___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "domain_name___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "domain_name___resolves_to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "domain_name___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "domain_name___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "email_addr___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_addr___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_addr___display_name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_addr___belongs_to_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_addr___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_addr___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "email_message___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___is_multipart",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "email_message___date",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "email_message___content_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___from_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___sender_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___cc_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___bcc_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___message_id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___subject",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___received_lines",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___additional_header_fields_key",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___additional_header_fields_value",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___body",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___body_multipart___body",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___body_multipart___body_raw_ref",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___body_multipart___content_type",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___body_multipart___content_disposition",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "email_message___raw_email_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "email_message___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x_ibm_endpoint___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___hostname",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___device_id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___groups",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___group_ids",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___os_software_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___agent_version",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___bios_manufacturer",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___bios_version",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___hardware_architecture",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___public_ip_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___public_ip_values",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___private_ip_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___private_ip_values",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___first_seen",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x_ibm_endpoint___last_seen",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x_ibm_endpoint___mac_address_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___mac_address_values",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x_ibm_endpoint___device_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___service_provider_account_external_id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x_ibm_endpoint___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "file___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___hashes___MD5",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___hashes___SHA_1",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___hashes___SHA_256",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___hashes___SHA_512",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___size",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "file___name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___name_enc",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___magic_number_hex",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___mime_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___ctime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "file___mtime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "file___atime",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "file___parent_directory_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___contains_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "file___content_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "file___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "ipv4_addr___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv4_addr___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv4_addr___resolves_to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "ipv4_addr___belongs_to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "ipv4_addr___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv4_addr___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "ipv6_addr___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv6_addr___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv6_addr___resolves_to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "ipv6_addr___belongs_to_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "ipv6_addr___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "ipv6_addr___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "mac_addr___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mac_addr___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mac_addr___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mac_addr___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "mutex___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mutex___name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mutex___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "mutex___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "network_traffic___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___start",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "network_traffic___end",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "network_traffic___is_active",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "network_traffic___src_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_src_ipv4_value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_src_ipv6_value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___dst_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_dst_ipv4_value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_dst_ipv6_value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___src_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___dst_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___protocols",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "network_traffic___src_byte_count",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___dst_byte_count",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___src_packets",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___dst_packets",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___ipfix",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___src_payload_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___dst_payload_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___encapsulates_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "network_traffic___encapsulated_by_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_pre_nat_src_ip",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_post_nat_src_ip",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_pre_nat_dst_ip",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_post_nat_dst_ip",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___x_pre_nat_src_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___x_post_nat_src_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___x_pre_nat_dst_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___x_post_nat_dst_port",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "network_traffic___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "network_traffic___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "process___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___is_hidden",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "process___pid",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "process___created_time",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "process___cwd",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___command_line",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___environment_variables_keys",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "process___environment_variables_values",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "process___opened_connection_ref",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "process___creator_user_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___image_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___parent_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___child_refs",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "process___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "process___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "software___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___cpe",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___swid",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___languages",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "software___vendor",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___version",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "software___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "url___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "url___value",
+        "type": "Array(String)"
+      },
+      {
+        "name": "url___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "url___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___extensions___gid",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "user_account___extensions___groups",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "user_account___extensions___home_dir",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___extensions___shell",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___user_id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___credential",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___account_login",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___account_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___display_name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___is_service_account",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "user_account___is_privileged",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "user_account___can_escalate_privs",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "user_account___is_disabled",
+        "type": "Array(Int8)"
+      },
+      {
+        "name": "user_account___account_created",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___account_expired",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___credential_last_changed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___account_first_login",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___account_last_login",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "user_account___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "user_account___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "windows_registry_key___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___key",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___values___name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___values___data",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___values___data_type",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___modified_time",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "windows_registry_key___creator_user_ref",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___number_of_sub_keys",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "windows_registry_key___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "windows_registry_key___time_observed",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x509_certificate___id",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___hashes___MD5",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___hashes___SHA_1",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___hashes___SHA_256",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___hashes___SHA_512",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___version",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___serial_number",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___signature_algorithm",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___issuer",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___subject",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___validity_not_before",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x509_certificate___validity_not_after",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x509_certificate___subject_public_key_algorithm",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___subject_public_key_exponent",
+        "type": "Array(Int32)"
+      },
+      {
+        "name": "x509_certificate___subject_public_key_modulus",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions",
+        "type": "Array(Array(String))"
+      },
+      {
+        "name": "x509_certificate___extensions___basic_constraints",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___name_constraints",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___policy_constraints",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___key_usage",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___extended_key_usage",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___subject_key_identifier",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___authority_key_identifier",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___subject_alternative_name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___issuer_alternative_name",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___subject_directory_attributes",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___crl_distribution_points",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___inhibit_any_policy",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___private_key_usage_period_not_before",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x509_certificate___extensions___private_key_usage_period_not_after",
+        "type": "Array(Int64)"
+      },
+      {
+        "name": "x509_certificate___extensions___certificate_policies",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___extensions___policy_mappings",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___context",
+        "type": "Array(String)"
+      },
+      {
+        "name": "x509_certificate___time_observed",
+        "type": "Array(Int64)"
+      }
+    ],
+    "data": [
+      [
+        "some_string_payload",
+        "some_string_event_uuid",
+        [
+          "some_string_event_ids"
+        ],
+        "EVENT",
+        1,
+        "some_string_name2692853430",
+        "some_string_description",
+        "some_string_data_source_id",
+        1,
+        "1",
+        "some_string_qid_event_id",
+        "some_string_qid_event_category",
+        "1",
+        [
+          "1"
+        ],
+        "1653577139285",
+        "1653577139285",
+        "1656150717539",
+        "1653577139285",
+        [
+          "some_string_external_mitre_ids"
+        ],
+        [
+          "some_string_mitre_ids"
+        ],
+        "1",
+        [
+          "1"
+        ],
+        "some_string_external_detection_id",
+        "some_string_external_alert_id",
+        "some_string_internal_account_id",
+        "some_string_external_severity",
+        1,
+        "some_string_external_credibility",
+        1,
+        1,
+        "some_string_finding_id",
+        [
+          "some_string_artifact___id"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "dGVzdA=="
+        ],
+        [
+          ""
+        ],
+        [
+          "some_string_artifact___hashes___MD5"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_1"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_256"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_512"
+        ],
+        [
+          "some_string_artifact___encryption_algorithm"
+        ],
+        [
+          "some_string_artifact___decryption_key"
+        ],
+        [
+          "some_string_artifact___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_autonomous_system___id"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_autonomous_system___name"
+        ],
+        [
+          "some_string_autonomous_system___rir"
+        ],
+        [
+          "some_string_autonomous_system___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_directory___id"
+        ],
+        [
+          "/some_dir/"
+        ],
+        [
+          "some_string_directory___path_enc"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          [
+            "some_string_directory___contains_refs"
+          ]
+        ],
+        [
+          "some_string_directory___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_domain_name___id"
+        ],
+        [
+          "some_string_domain_name___value"
+        ],
+        [
+          [
+            "some_string_domain_name___resolves_to_refs"
+          ]
+        ],
+        [
+          "some_string_domain_name___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_addr___id"
+        ],
+        [
+          "test@company.com"
+        ],
+        [
+          "some_string_email_addr___display_name"
+        ],
+        [
+          "some_string_email_addr___belongs_to_ref"
+        ],
+        [
+          "some_string_email_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_message___id"
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_email_message___content_type"
+        ],
+        [
+          "some_string_email_message___from_ref"
+        ],
+        [
+          "some_string_email_message___sender_ref"
+        ],
+        [
+          [
+            "some_string_email_message___to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___cc_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___bcc_refs"
+          ]
+        ],
+        [
+          "some_string_email_message___message_id"
+        ],
+        [
+          "some_string_email_message___subject"
+        ],
+        [
+          [
+            "some_string_email_message___received_lines"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_key"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_value"
+          ]
+        ],
+        [
+          "some_string_email_message___body"
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body_raw_ref"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_type"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_disposition"
+          ]
+        ],
+        [
+          "some_string_email_message___raw_email_ref"
+        ],
+        [
+          "some_string_email_message___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_x_ibm_endpoint___id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hostname"
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_id"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___groups"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___group_ids"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___os_software_ref"
+        ],
+        [
+          "some_string_x_ibm_endpoint___agent_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_manufacturer"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hardware_architecture"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_values"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_values"
+          ]
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_values"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_type"
+        ],
+        [
+          "some_string_x_ibm_endpoint___service_provider_account_external_id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___id"
+        ],
+        [
+          "some_string_file___hashes___MD5"
+        ],
+        [
+          "some_string_file___hashes___SHA_1"
+        ],
+        [
+          "some_string_file___hashes___SHA_256"
+        ],
+        [
+          "some_string_file___hashes___SHA_512"
+        ],
+        [
+          1
+        ],
+        [
+          "cmd.exe"
+        ],
+        [
+          "some_string_file___name_enc"
+        ],
+        [
+          "some_string_file___magic_number_hex"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___parent_directory_ref"
+        ],
+        [
+          [
+            "some_string_file___contains_refs"
+          ]
+        ],
+        [
+          "some_string_file___content_ref"
+        ],
+        [
+          "some_string_file___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv4_addr___id"
+        ],
+        [
+          "192.168.2.1"
+        ],
+        [
+          [
+            "some_string_ipv4_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv4_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv4_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv6_addr___id"
+        ],
+        [
+          "fe80::413:bbef:4f7e:f931"
+        ],
+        [
+          [
+            "some_string_ipv6_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv6_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv6_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mac_addr___id"
+        ],
+        [
+          "e7:1b:7f:df:73:7f"
+        ],
+        [
+          "some_string_mac_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mutex___id"
+        ],
+        [
+          "some_string_mutex___name"
+        ],
+        [
+          "some_string_mutex___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_network_traffic___id"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___src_ref"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv6_value"
+        ],
+        [
+          "some_string_network_traffic___dst_ref"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv6_value"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_network_traffic___protocols"
+          ]
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___ipfix"
+        ],
+        [
+          "some_string_network_traffic___src_payload_ref"
+        ],
+        [
+          "some_string_network_traffic___dst_payload_ref"
+        ],
+        [
+          [
+            "some_string_network_traffic___encapsulates_refs"
+          ]
+        ],
+        [
+          "some_string_network_traffic___encapsulated_by_ref"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_dst_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_dst_ip"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___id"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___cwd"
+        ],
+        [
+          "some_string_process___command_line"
+        ],
+        [
+          [
+            "some_string_process___environment_variables_keys"
+          ]
+        ],
+        [
+          [
+            "some_string_process___environment_variables_values"
+          ]
+        ],
+        [
+          [
+            "some_string_process___opened_connection_ref"
+          ]
+        ],
+        [
+          "some_string_process___creator_user_ref"
+        ],
+        [
+          "some_string_process___image_ref"
+        ],
+        [
+          "some_string_process___parent_ref"
+        ],
+        [
+          [
+            "some_string_process___child_refs"
+          ]
+        ],
+        [
+          "some_string_process___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_software___id"
+        ],
+        [
+          "some_string_software___name"
+        ],
+        [
+          "some_string_software___cpe"
+        ],
+        [
+          "some_string_software___swid"
+        ],
+        [
+          [
+            "some_string_software___languages"
+          ]
+        ],
+        [
+          "some_string_software___vendor"
+        ],
+        [
+          "some_string_software___version"
+        ],
+        [
+          "some_string_software___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_url___id"
+        ],
+        [
+          "some_string_url___value"
+        ],
+        [
+          "some_string_url___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_user_account___id"
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_user_account___extensions___groups"
+          ]
+        ],
+        [
+          "some_string_user_account___extensions___home_dir"
+        ],
+        [
+          "some_string_user_account___extensions___shell"
+        ],
+        [
+          "some_string_user_account___user_id"
+        ],
+        [
+          "some_string_user_account___credential"
+        ],
+        [
+          "some_string_user_account___account_login"
+        ],
+        [
+          "some_string_user_account___account_type"
+        ],
+        [
+          "some_string_user_account___display_name"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_user_account___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___id"
+        ],
+        [
+          "some_string_windows_registry_key___key"
+        ],
+        [
+          "some_string_windows_registry_key___values___name"
+        ],
+        [
+          "some_string_windows_registry_key___values___data"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___creator_user_ref"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_windows_registry_key___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_x509_certificate___id"
+        ],
+        [
+          "some_string_x509_certificate___hashes___MD5"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_1"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_256"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_512"
+        ],
+        [
+          "some_string_x509_certificate___version"
+        ],
+        [
+          "some_string_x509_certificate___serial_number"
+        ],
+        [
+          "some_string_x509_certificate___signature_algorithm"
+        ],
+        [
+          "some_string_x509_certificate___issuer"
+        ],
+        [
+          "some_string_x509_certificate___subject"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_algorithm"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_modulus"
+        ],
+        [
+          [
+            "some_string_x509_certificate___extensions"
+          ]
+        ],
+        [
+          "some_string_x509_certificate___extensions___basic_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___name_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___extended_key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___authority_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___issuer_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_directory_attributes"
+        ],
+        [
+          "some_string_x509_certificate___extensions___crl_distribution_points"
+        ],
+        [
+          "some_string_x509_certificate___extensions___inhibit_any_policy"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___extensions___certificate_policies"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_mappings"
+        ],
+        [
+          "some_string_x509_certificate___context"
+        ],
+        [
+          "1653577139286"
+        ]
+      ],
+      [
+        "some_string_payload",
+        "some_string_event_uuid",
+        [
+          "some_string_event_ids"
+        ],
+        "EVENT",
+        1,
+        "some_string_name2788789525",
+        "some_string_description",
+        "some_string_data_source_id",
+        1,
+        "1",
+        "some_string_qid_event_id",
+        "some_string_qid_event_category",
+        "1",
+        [
+          "1"
+        ],
+        "1653577139285",
+        "1653577139285",
+        "1654806932922",
+        "1653577139285",
+        [
+          "some_string_external_mitre_ids"
+        ],
+        [
+          "some_string_mitre_ids"
+        ],
+        "1",
+        [
+          "1"
+        ],
+        "some_string_external_detection_id",
+        "some_string_external_alert_id",
+        "some_string_internal_account_id",
+        "some_string_external_severity",
+        1,
+        "some_string_external_credibility",
+        1,
+        1,
+        "some_string_finding_id",
+        [
+          "some_string_artifact___id"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "dGVzdA=="
+        ],
+        [
+          ""
+        ],
+        [
+          "some_string_artifact___hashes___MD5"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_1"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_256"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_512"
+        ],
+        [
+          "some_string_artifact___encryption_algorithm"
+        ],
+        [
+          "some_string_artifact___decryption_key"
+        ],
+        [
+          "some_string_artifact___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_autonomous_system___id"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_autonomous_system___name"
+        ],
+        [
+          "some_string_autonomous_system___rir"
+        ],
+        [
+          "some_string_autonomous_system___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_directory___id"
+        ],
+        [
+          "/some_dir/"
+        ],
+        [
+          "some_string_directory___path_enc"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          [
+            "some_string_directory___contains_refs"
+          ]
+        ],
+        [
+          "some_string_directory___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_domain_name___id"
+        ],
+        [
+          "some_string_domain_name___value"
+        ],
+        [
+          [
+            "some_string_domain_name___resolves_to_refs"
+          ]
+        ],
+        [
+          "some_string_domain_name___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_addr___id"
+        ],
+        [
+          "test@company.com"
+        ],
+        [
+          "some_string_email_addr___display_name"
+        ],
+        [
+          "some_string_email_addr___belongs_to_ref"
+        ],
+        [
+          "some_string_email_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_message___id"
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_email_message___content_type"
+        ],
+        [
+          "some_string_email_message___from_ref"
+        ],
+        [
+          "some_string_email_message___sender_ref"
+        ],
+        [
+          [
+            "some_string_email_message___to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___cc_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___bcc_refs"
+          ]
+        ],
+        [
+          "some_string_email_message___message_id"
+        ],
+        [
+          "some_string_email_message___subject"
+        ],
+        [
+          [
+            "some_string_email_message___received_lines"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_key"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_value"
+          ]
+        ],
+        [
+          "some_string_email_message___body"
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body_raw_ref"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_type"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_disposition"
+          ]
+        ],
+        [
+          "some_string_email_message___raw_email_ref"
+        ],
+        [
+          "some_string_email_message___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_x_ibm_endpoint___id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hostname"
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_id"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___groups"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___group_ids"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___os_software_ref"
+        ],
+        [
+          "some_string_x_ibm_endpoint___agent_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_manufacturer"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hardware_architecture"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_values"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_values"
+          ]
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_values"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_type"
+        ],
+        [
+          "some_string_x_ibm_endpoint___service_provider_account_external_id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___id"
+        ],
+        [
+          "some_string_file___hashes___MD5"
+        ],
+        [
+          "some_string_file___hashes___SHA_1"
+        ],
+        [
+          "some_string_file___hashes___SHA_256"
+        ],
+        [
+          "some_string_file___hashes___SHA_512"
+        ],
+        [
+          1
+        ],
+        [
+          "cmd.exe"
+        ],
+        [
+          "some_string_file___name_enc"
+        ],
+        [
+          "some_string_file___magic_number_hex"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___parent_directory_ref"
+        ],
+        [
+          [
+            "some_string_file___contains_refs"
+          ]
+        ],
+        [
+          "some_string_file___content_ref"
+        ],
+        [
+          "some_string_file___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv4_addr___id"
+        ],
+        [
+          "192.168.2.1"
+        ],
+        [
+          [
+            "some_string_ipv4_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv4_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv4_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv6_addr___id"
+        ],
+        [
+          "fe80::413:bbef:4f7e:f931"
+        ],
+        [
+          [
+            "some_string_ipv6_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv6_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv6_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mac_addr___id"
+        ],
+        [
+          "e7:1b:7f:df:73:7f"
+        ],
+        [
+          "some_string_mac_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mutex___id"
+        ],
+        [
+          "some_string_mutex___name"
+        ],
+        [
+          "some_string_mutex___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_network_traffic___id"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___src_ref"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv6_value"
+        ],
+        [
+          "some_string_network_traffic___dst_ref"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv6_value"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_network_traffic___protocols"
+          ]
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___ipfix"
+        ],
+        [
+          "some_string_network_traffic___src_payload_ref"
+        ],
+        [
+          "some_string_network_traffic___dst_payload_ref"
+        ],
+        [
+          [
+            "some_string_network_traffic___encapsulates_refs"
+          ]
+        ],
+        [
+          "some_string_network_traffic___encapsulated_by_ref"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_dst_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_dst_ip"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___id"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___cwd"
+        ],
+        [
+          "some_string_process___command_line"
+        ],
+        [
+          [
+            "some_string_process___environment_variables_keys"
+          ]
+        ],
+        [
+          [
+            "some_string_process___environment_variables_values"
+          ]
+        ],
+        [
+          [
+            "some_string_process___opened_connection_ref"
+          ]
+        ],
+        [
+          "some_string_process___creator_user_ref"
+        ],
+        [
+          "some_string_process___image_ref"
+        ],
+        [
+          "some_string_process___parent_ref"
+        ],
+        [
+          [
+            "some_string_process___child_refs"
+          ]
+        ],
+        [
+          "some_string_process___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_software___id"
+        ],
+        [
+          "some_string_software___name"
+        ],
+        [
+          "some_string_software___cpe"
+        ],
+        [
+          "some_string_software___swid"
+        ],
+        [
+          [
+            "some_string_software___languages"
+          ]
+        ],
+        [
+          "some_string_software___vendor"
+        ],
+        [
+          "some_string_software___version"
+        ],
+        [
+          "some_string_software___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_url___id"
+        ],
+        [
+          "some_string_url___value"
+        ],
+        [
+          "some_string_url___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_user_account___id"
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_user_account___extensions___groups"
+          ]
+        ],
+        [
+          "some_string_user_account___extensions___home_dir"
+        ],
+        [
+          "some_string_user_account___extensions___shell"
+        ],
+        [
+          "some_string_user_account___user_id"
+        ],
+        [
+          "some_string_user_account___credential"
+        ],
+        [
+          "some_string_user_account___account_login"
+        ],
+        [
+          "some_string_user_account___account_type"
+        ],
+        [
+          "some_string_user_account___display_name"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_user_account___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___id"
+        ],
+        [
+          "some_string_windows_registry_key___key"
+        ],
+        [
+          "some_string_windows_registry_key___values___name"
+        ],
+        [
+          "some_string_windows_registry_key___values___data"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___creator_user_ref"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_windows_registry_key___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_x509_certificate___id"
+        ],
+        [
+          "some_string_x509_certificate___hashes___MD5"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_1"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_256"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_512"
+        ],
+        [
+          "some_string_x509_certificate___version"
+        ],
+        [
+          "some_string_x509_certificate___serial_number"
+        ],
+        [
+          "some_string_x509_certificate___signature_algorithm"
+        ],
+        [
+          "some_string_x509_certificate___issuer"
+        ],
+        [
+          "some_string_x509_certificate___subject"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_algorithm"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_modulus"
+        ],
+        [
+          [
+            "some_string_x509_certificate___extensions"
+          ]
+        ],
+        [
+          "some_string_x509_certificate___extensions___basic_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___name_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___extended_key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___authority_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___issuer_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_directory_attributes"
+        ],
+        [
+          "some_string_x509_certificate___extensions___crl_distribution_points"
+        ],
+        [
+          "some_string_x509_certificate___extensions___inhibit_any_policy"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___extensions___certificate_policies"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_mappings"
+        ],
+        [
+          "some_string_x509_certificate___context"
+        ],
+        [
+          "1653577139286"
+        ]
+      ],
+      [
+        "some_string_payload",
+        "some_string_event_uuid",
+        [
+          "some_string_event_ids"
+        ],
+        "EVENT",
+        1,
+        "some_string_name2579222041",
+        "some_string_description",
+        "some_string_data_source_id",
+        1,
+        "1",
+        "some_string_qid_event_id",
+        "some_string_qid_event_category",
+        "1",
+        [
+          "1"
+        ],
+        "1653577139285",
+        "1653577139285",
+        "1656892914449",
+        "1653577139285",
+        [
+          "some_string_external_mitre_ids"
+        ],
+        [
+          "some_string_mitre_ids"
+        ],
+        "1",
+        [
+          "1"
+        ],
+        "some_string_external_detection_id",
+        "some_string_external_alert_id",
+        "some_string_internal_account_id",
+        "some_string_external_severity",
+        1,
+        "some_string_external_credibility",
+        1,
+        1,
+        "some_string_finding_id",
+        [
+          "some_string_artifact___id"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "dGVzdA=="
+        ],
+        [
+          ""
+        ],
+        [
+          "some_string_artifact___hashes___MD5"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_1"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_256"
+        ],
+        [
+          "some_string_artifact___hashes___SHA_512"
+        ],
+        [
+          "some_string_artifact___encryption_algorithm"
+        ],
+        [
+          "some_string_artifact___decryption_key"
+        ],
+        [
+          "some_string_artifact___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_autonomous_system___id"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_autonomous_system___name"
+        ],
+        [
+          "some_string_autonomous_system___rir"
+        ],
+        [
+          "some_string_autonomous_system___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_directory___id"
+        ],
+        [
+          "/some_dir/"
+        ],
+        [
+          "some_string_directory___path_enc"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          [
+            "some_string_directory___contains_refs"
+          ]
+        ],
+        [
+          "some_string_directory___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_domain_name___id"
+        ],
+        [
+          "some_string_domain_name___value"
+        ],
+        [
+          [
+            "some_string_domain_name___resolves_to_refs"
+          ]
+        ],
+        [
+          "some_string_domain_name___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_addr___id"
+        ],
+        [
+          "test@company.com"
+        ],
+        [
+          "some_string_email_addr___display_name"
+        ],
+        [
+          "some_string_email_addr___belongs_to_ref"
+        ],
+        [
+          "some_string_email_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_email_message___id"
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_email_message___content_type"
+        ],
+        [
+          "some_string_email_message___from_ref"
+        ],
+        [
+          "some_string_email_message___sender_ref"
+        ],
+        [
+          [
+            "some_string_email_message___to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___cc_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___bcc_refs"
+          ]
+        ],
+        [
+          "some_string_email_message___message_id"
+        ],
+        [
+          "some_string_email_message___subject"
+        ],
+        [
+          [
+            "some_string_email_message___received_lines"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_key"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___additional_header_fields_value"
+          ]
+        ],
+        [
+          "some_string_email_message___body"
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___body_raw_ref"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_type"
+          ]
+        ],
+        [
+          [
+            "some_string_email_message___body_multipart___content_disposition"
+          ]
+        ],
+        [
+          "some_string_email_message___raw_email_ref"
+        ],
+        [
+          "some_string_email_message___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_x_ibm_endpoint___id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hostname"
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_id"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___groups"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___group_ids"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___os_software_ref"
+        ],
+        [
+          "some_string_x_ibm_endpoint___agent_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_manufacturer"
+        ],
+        [
+          "some_string_x_ibm_endpoint___bios_version"
+        ],
+        [
+          "some_string_x_ibm_endpoint___hardware_architecture"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___public_ip_values"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___private_ip_values"
+          ]
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_x_ibm_endpoint___mac_address_values"
+          ]
+        ],
+        [
+          "some_string_x_ibm_endpoint___device_type"
+        ],
+        [
+          "some_string_x_ibm_endpoint___service_provider_account_external_id"
+        ],
+        [
+          "some_string_x_ibm_endpoint___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___id"
+        ],
+        [
+          "some_string_file___hashes___MD5"
+        ],
+        [
+          "some_string_file___hashes___SHA_1"
+        ],
+        [
+          "some_string_file___hashes___SHA_256"
+        ],
+        [
+          "some_string_file___hashes___SHA_512"
+        ],
+        [
+          1
+        ],
+        [
+          "cmd.exe"
+        ],
+        [
+          "some_string_file___name_enc"
+        ],
+        [
+          "some_string_file___magic_number_hex"
+        ],
+        [
+          "application/json"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_file___parent_directory_ref"
+        ],
+        [
+          [
+            "some_string_file___contains_refs"
+          ]
+        ],
+        [
+          "some_string_file___content_ref"
+        ],
+        [
+          "some_string_file___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv4_addr___id"
+        ],
+        [
+          "192.168.2.1"
+        ],
+        [
+          [
+            "some_string_ipv4_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv4_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv4_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_ipv6_addr___id"
+        ],
+        [
+          "fe80::413:bbef:4f7e:f931"
+        ],
+        [
+          [
+            "some_string_ipv6_addr___resolves_to_refs"
+          ]
+        ],
+        [
+          [
+            "some_string_ipv6_addr___belongs_to_refs"
+          ]
+        ],
+        [
+          "some_string_ipv6_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mac_addr___id"
+        ],
+        [
+          "e7:1b:7f:df:73:7f"
+        ],
+        [
+          "some_string_mac_addr___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_mutex___id"
+        ],
+        [
+          "some_string_mutex___name"
+        ],
+        [
+          "some_string_mutex___context"
+        ],
+        [
+          "1653577139285"
+        ],
+        [
+          "some_string_network_traffic___id"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___src_ref"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_src_ipv6_value"
+        ],
+        [
+          "some_string_network_traffic___dst_ref"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv4_value"
+        ],
+        [
+          "some_string_network_traffic___x_dst_ipv6_value"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_network_traffic___protocols"
+          ]
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___ipfix"
+        ],
+        [
+          "some_string_network_traffic___src_payload_ref"
+        ],
+        [
+          "some_string_network_traffic___dst_payload_ref"
+        ],
+        [
+          [
+            "some_string_network_traffic___encapsulates_refs"
+          ]
+        ],
+        [
+          "some_string_network_traffic___encapsulated_by_ref"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_src_ip"
+        ],
+        [
+          "some_string_network_traffic___x_pre_nat_dst_ip"
+        ],
+        [
+          "some_string_network_traffic___x_post_nat_dst_ip"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_network_traffic___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___id"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_process___cwd"
+        ],
+        [
+          "some_string_process___command_line"
+        ],
+        [
+          [
+            "some_string_process___environment_variables_keys"
+          ]
+        ],
+        [
+          [
+            "some_string_process___environment_variables_values"
+          ]
+        ],
+        [
+          [
+            "some_string_process___opened_connection_ref"
+          ]
+        ],
+        [
+          "some_string_process___creator_user_ref"
+        ],
+        [
+          "some_string_process___image_ref"
+        ],
+        [
+          "some_string_process___parent_ref"
+        ],
+        [
+          [
+            "some_string_process___child_refs"
+          ]
+        ],
+        [
+          "some_string_process___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_software___id"
+        ],
+        [
+          "some_string_software___name"
+        ],
+        [
+          "some_string_software___cpe"
+        ],
+        [
+          "some_string_software___swid"
+        ],
+        [
+          [
+            "some_string_software___languages"
+          ]
+        ],
+        [
+          "some_string_software___vendor"
+        ],
+        [
+          "some_string_software___version"
+        ],
+        [
+          "some_string_software___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_url___id"
+        ],
+        [
+          "some_string_url___value"
+        ],
+        [
+          "some_string_url___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_user_account___id"
+        ],
+        [
+          1
+        ],
+        [
+          [
+            "some_string_user_account___extensions___groups"
+          ]
+        ],
+        [
+          "some_string_user_account___extensions___home_dir"
+        ],
+        [
+          "some_string_user_account___extensions___shell"
+        ],
+        [
+          "some_string_user_account___user_id"
+        ],
+        [
+          "some_string_user_account___credential"
+        ],
+        [
+          "some_string_user_account___account_login"
+        ],
+        [
+          "some_string_user_account___account_type"
+        ],
+        [
+          "some_string_user_account___display_name"
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_user_account___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___id"
+        ],
+        [
+          "some_string_windows_registry_key___key"
+        ],
+        [
+          "some_string_windows_registry_key___values___name"
+        ],
+        [
+          "some_string_windows_registry_key___values___data"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_windows_registry_key___creator_user_ref"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_windows_registry_key___context"
+        ],
+        [
+          "1653577139286"
+        ],
+        [
+          "some_string_x509_certificate___id"
+        ],
+        [
+          "some_string_x509_certificate___hashes___MD5"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_1"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_256"
+        ],
+        [
+          "some_string_x509_certificate___hashes___SHA_512"
+        ],
+        [
+          "some_string_x509_certificate___version"
+        ],
+        [
+          "some_string_x509_certificate___serial_number"
+        ],
+        [
+          "some_string_x509_certificate___signature_algorithm"
+        ],
+        [
+          "some_string_x509_certificate___issuer"
+        ],
+        [
+          "some_string_x509_certificate___subject"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_algorithm"
+        ],
+        [
+          1
+        ],
+        [
+          "some_string_x509_certificate___subject_public_key_modulus"
+        ],
+        [
+          [
+            "some_string_x509_certificate___extensions"
+          ]
+        ],
+        [
+          "some_string_x509_certificate___extensions___basic_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___name_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_constraints"
+        ],
+        [
+          "some_string_x509_certificate___extensions___key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___extended_key_usage"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___authority_key_identifier"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___issuer_alternative_name"
+        ],
+        [
+          "some_string_x509_certificate___extensions___subject_directory_attributes"
+        ],
+        [
+          "some_string_x509_certificate___extensions___crl_distribution_points"
+        ],
+        [
+          "some_string_x509_certificate___extensions___inhibit_any_policy"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "some_string_x509_certificate___extensions___certificate_policies"
+        ],
+        [
+          "some_string_x509_certificate___extensions___policy_mappings"
+        ],
+        [
+          "some_string_x509_certificate___context"
+        ],
+        [
+          "1653577139286"
+        ]
+      ]
+    ],
+    "rows": 3,
+    "rows_before_limit_at_least": 3,
+    "statistics": {
+      "elapsed": 0.02167995,
+      "rows_read": 3,
+      "bytes_read": 35667
+    }
+  },
+  "offset": 0,
+  "total_count": 3,
+  "pagesize": 50
+}
